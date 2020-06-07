@@ -5,3 +5,5 @@
 To solve the challenge, I use [ptrace](https://www.man7.org/linux/man-pages/man2/ptrace.2.html) to debug the program dynamically and read flags from its register.
 
 flag: `RCTF{my_br4in_is_f__ked}`
+
+UPDATE: The source code of this challenge has been released by its author: [https://github.com/CTF-TASKS/go-flag](https://github.com/CTF-TASKS/go-flag)
